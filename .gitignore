@@ -1,3 +1,8 @@
+# Root (better-sqlite3 installed here by mistake)
+node_modules/
+package.json
+package-lock.json
+
 # Backend
 backend/node_modules/
 backend/dist/

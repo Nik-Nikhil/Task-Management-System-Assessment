@@ -39,6 +39,7 @@ router.post('/register', validate(registerSchema), async (req: Request, res: Res
       user: { id: user.id, name: user.name, email: user.email },
     });
   } catch (err) {
+    console.error('Register error:', err);
     res.status(500).json({ error: 'Internal server error' });
   }
 });
